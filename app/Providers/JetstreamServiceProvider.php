@@ -3,10 +3,10 @@
 namespace App\Providers;
 
 use App\Memberships\Actions\AddTeamMember;
-use App\Memberships\Actions\CreateTeam;
-use App\Memberships\Actions\DeleteTeam;
-use App\Memberships\Actions\DeleteUser;
-use App\Memberships\Actions\UpdateTeamName;
+use App\Teams\Actions\CreateTeam;
+use App\Teams\Actions\DeleteTeam;
+use App\Users\Actions\DeleteUser;
+use App\Teams\Actions\UpdateTeamName;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Jetstream\Jetstream;
 
