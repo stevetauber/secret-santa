@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Models;
+namespace App\Teams;
 
 use Laravel\Jetstream\Events\TeamCreated;
 use Laravel\Jetstream\Events\TeamDeleted;
