@@ -17,6 +17,6 @@ class ExchangeTest extends TestCase {
             ->has(Exchange::factory())
             ->make();
 
-        $this->assertTrue($teamWithExchange->ownsExchange);
+        $this->assertTrue($teamWithExchange->runsAnExchange());
     }
 }
