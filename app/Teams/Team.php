@@ -2,6 +2,7 @@
 
 namespace App\Teams;
 
+use App\Exchanges\Exchange;
 use Laravel\Jetstream\Events\TeamCreated;
 use Laravel\Jetstream\Events\TeamDeleted;
 use Laravel\Jetstream\Events\TeamUpdated;
@@ -38,4 +39,9 @@ class Team extends JetstreamTeam
         'updated' => TeamUpdated::class,
         'deleted' => TeamDeleted::class,
     ];
+
+    public function exchanges()
+    {
+        return $this->hasMany(Exchange::class);
+    }
 }
