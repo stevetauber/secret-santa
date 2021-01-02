@@ -51,13 +51,13 @@ class Team extends JetstreamTeam
         return $this->hasMany(Exchange::class);
     }
 
-    protected static function newFactory(): Factory
-    {
-        return TeamFactory::new();
-    }
-
     public function runsAnExchange(): bool
     {
         return (bool) $this->exchanges()->count();
+    }
+
+    protected static function newFactory(): Factory
+    {
+        return TeamFactory::new();
     }
 }
